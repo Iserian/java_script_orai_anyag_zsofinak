@@ -1,0 +1,85 @@
+:root{
+    --background: #171A21;
+    --background2: #617073;
+    --background3: #92BCEA;
+    --button-color: #7A93AC;
+    --text-color: #f1f1f1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    padding: 1rem;
+    background-color: var(--background3);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content:baseline;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--background)
+}
+
+#galeria{
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+#galeria #fokep{
+    width: 100%;
+    height: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.gombok{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 2rem;
+}
+
+.gombok button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gombok button img{
+    width: 36px;
+    height: 36px;
+}
+
+#prev{
+    transform: scaleX(-1);
+}
+
+#kiskepek{
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.kiskep{
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.active{
+    border: 2px solid red;
+    filter: grayscale(0) !important;
+}
